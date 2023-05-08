@@ -1,0 +1,6 @@
+.body_page{
+    margin-top: 100px;
+}
+.react-multiple-carousel__arrow ,.react-multiple-carousel__arrow--left {
+    display: none !important;
+}

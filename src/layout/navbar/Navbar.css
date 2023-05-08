@@ -1,0 +1,303 @@
+*{
+  font-family: 'SF Pro', sans-serif !important;
+}
+.App{
+  scroll-behavior: smooth !important;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 207px;
+}
+.LogoTextBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.logo a{
+  text-decoration-line: none;
+}
+.CarouselLow{
+  margin-top: 10px;
+}
+.LogoText{
+  margin: 0px;
+  font-family: 'SF Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #0F0F0F;
+  width: 350px;
+}
+.LogoLowText{
+  margin: 0px;
+  color: #28468C;
+  font-weight: 400;
+  font-size: 10px;
+  font-family: 'SF Pro', sans-serif;
+  letter-spacing: 4%;
+  line-height: 9.5px;
+}
+.MainNavLi{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+.MainNavLi li{
+  margin: 20px 20px;
+  list-style-type: none;
+  height: 20px;
+}
+.MainNavLi a{
+  color: black;
+  text-decoration-line: none;
+}
+.NumberNav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.NumberNav h2 {
+  margin: 0px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15.2px;
+  /* or 15px */
+  
+  text-align: right;
+  text-transform: uppercase;
+  
+  color: #0F0F0F;
+}
+.telPhone{
+  text-decoration-line: none;
+  color: black;
+}
+
+.Navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 auto;
+
+}
+.kursgaYozilish{
+  color: #28468C;
+  font-size: 10px;
+  margin: 0px;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95%;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* Menu Button */
+
+.menuGridTemp{
+  top: 0;
+  right: 0;
+}
+.hideiconSid{
+  opacity: 0 !important;
+}
+.menuGridTemp {
+  font-size: 18px;
+  position: absolute;
+  margin: 30px 10px;
+  /* top: 33%; */
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  /* background: rgba(77, 70, 70, 0.7); */
+  text-shadow: 2px 1px #000;
+  justify-content: center;
+  color: #000;
+  z-index: 11;
+}
+
+.MenuGrid{
+  height: 30px;
+  width: 30px;
+  text-shadow: 2px 1px #000;
+  transition: 0.5s ease all;
+}
+.CloseMenuGrid{
+  display: none;
+}
+.MenuGrid {
+  outline: none;
+}
+.menu{
+  display: none;
+}
+.menuMob{
+  display: flex;
+  position: absolute !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 80px;
+  left: 0;
+  height: 100vh;
+  width: 105vw;
+  background: #FFF;
+  z-index: 100000000000000;
+}
+.innerMenuMob{
+  position: absolute;
+  top: 25%;
+}
+
+.MainNavLi{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  margin: 0px;
+}
+.MainNavActive{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainNavLiActive{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.MainNavLiActive {
+  margin: 20px 20px;
+  list-style-type: none;
+  padding: 0px;
+}
+.MainNavLiActive > *{
+  margin: 12px auto;
+  font-family: 'SF Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */    
+  text-align: center;
+  color: #000000;
+}
+.MainNavLi a, .MainNavLiActive a{
+  color: black;
+  text-decoration-line: none;
+}
+.NumberNavActive{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  flex-direction: column;
+}
+.NavFon{
+  position: fixed;
+  width: 100%;
+  /* margin: 0 5%; */
+  box-shadow:  0 2px 0 0px rgb(231, 229, 229);
+  z-index: 22;
+  background: #fff;
+  top: 0;
+  right: 0;
+
+}
+
+@media screen and (min-width: 1200px) {
+  .Navbar{
+      max-width: 1400px;
+  }  
+}
+@media screen and (max-width: 1200px) {
+  .Navbar {
+      width: 90%;
+      margin: 0 5%;
+  }
+  .NavFon{
+      position: fixed;
+      width: 100%;
+      /* margin: 0 5%; */
+      box-shadow:  0 2px 0 0px rgb(231, 229, 229);
+      z-index: 22;
+      background: #fff;
+      top: 0;
+      right: 0;
+
+  }
+}
+
+@media screen and (max-width: 947px) {
+  .Navbar{
+      margin: 0 40px;
+      height: 80px;
+  }
+  .NumberNav {
+      margin-top: 30px;
+  }
+  /* .MainNav{
+      display: block !important;
+  } */
+  .NumberNav{
+      display: none;
+  }
+  .menuGridTemp{
+      right: 40px;
+  }
+  
+} 
+
+@media screen and (max-width: 747px) {
+  .menuGridTemp{
+      right: 30px;
+  }
+  
+}
+@media screen and (max-width: 576px) {
+  .menuGridTemp{
+      right: 20px;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  /* .MainNav, .NumberNav{
+      display: none;
+  } */
+  /* .MainNav{
+      display: block;
+  } */
+  .MainNavLi li{
+      font-size: 14px;
+  }
+  .MainTopBlock {
+      flex-direction: column;
+      margin-top: 20px !important;
+  }
+  .MainTopBlock:first-child{
+      width: 720px;
+  }
+}
+
+/* ================================================================================================= */
+/* Menu Media */
+
+@media screen and (min-width: 947px){
+  .menuGridTemp{
+      display: none;
+  }   
+  
+}
