@@ -1,0 +1,141 @@
+.about_umumiy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: max-content;
+}
+
+.body_page .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+.title_body_page{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px auto;
+    letter-spacing: 0.5px;
+}
+
+
+.rahbar_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 300px;
+    width: 95%;
+    background-color: #F5f5f5;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    -webkit-border-radius: 5px 30px 40px 30px;
+    border-radius: 5px 30px 40px 30px;
+    background: linear-gradient(48deg, #5294fd 30%, #F5F5F5 70%);
+    /* background: linear-gradient(227deg, #4abdac 1%, #ffffff 100%); */   
+}
+.rahbar_img_box ,.rahbar_img_box img{
+    width: 450px;
+    height: 300px;
+    -webkit-border-radius: 5px 0px 0px 30px;
+    border-radius: 5px 0px 0px 30px;
+    object-fit: cover;
+
+}
+.rahbar_contact_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: calc(100% - 450px);
+    height: 300px;
+    padding: 20px;
+}
+
+.rahbar_upper_contact{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rahbar_upper_contact h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+.rahbar_upper_contact p{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.rahbar_red_hr{
+    height: 20px;
+    width: 100%;
+    color: crimson;
+}
+.hodim_box .rahbar_detail_contact {
+    justify-content: space-around !important;
+}
+.rahbar_detail_contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150%;
+}
+.rahbar_detail_contact_item{
+    width: 25%;
+    font-size: 14px;
+}
+.rahbar_detail_contact_item p:first-child {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 768px) {
+    .rahbar_box {
+      flex-direction: column;
+      height: auto;
+
+      -webkit-border-radius: 5px 30px 40px 30px;
+      border-radius: 5px 30px 40px 30px;
+  
+    }
+  
+    .rahbar_img_box, .rahbar_img_box img {
+      width: 100%;
+      height: 200px;
+      -webkit-border-radius: 5px 30px 0px 0px;
+    border-radius: 5px 30px 0px 0px;
+
+    }
+  
+    .rahbar_contact_box {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      -webkit-border-radius: 0px 0px 5px 5px;
+      border-radius: 0px 0px 5px 5px;
+    }
+  
+    .rahbar_detail_contact_item {
+      width: 50%;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .rahbar_detail_contact_item p:first-child {
+      font-size: 16px;
+    }
+  }
+  

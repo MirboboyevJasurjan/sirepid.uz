@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../../layout/navbar/Navbar";
 import Footer from "../../../layout/footer/Footer";
+import { Container } from "react-bootstrap";
+import "../About.css"
 
 function Hodimlar() {
   const arr = [
@@ -42,8 +44,10 @@ function Hodimlar() {
     <>
       <Navbar />
       <div className="body_page">
+        <Container>
+        <h5 className="title_body_page">Hodimlar</h5>
         {arr.map((e, i) => (
-          <div className="rahbar_box">
+          <div className="rahbar_box hodim_box">
             <div className="rahbar_img_box">
               <img src={e.image} alt="Rahbar surati" srcset="" />
             </div>
@@ -56,7 +60,7 @@ function Hodimlar() {
               <div className="rahbar_detail_contact">
               <div className="rahbar_detail_contact_item">
                   <p> Telefon </p>
-                  <p>{e.phone}</p>
+                  <p>{e.telefon}</p>
                 </div>
                 <div className="rahbar_detail_contact_item">
                   <p> Email </p>
@@ -66,6 +70,7 @@ function Hodimlar() {
             </div>
           </div>
         ))}
+        </Container>
       </div>
       <Footer />
     </>

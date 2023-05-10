@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../../layout/navbar/Navbar";
 import Footer from "../../../layout/footer/Footer";
+import { Container } from "react-bootstrap";
 
 function Rahbarlar() {
   const arr = [
@@ -23,7 +24,7 @@ function Rahbarlar() {
       email: "jamshid.khasanov@ssv.uz",
       days: "Dushanba, Juma",
       time: "10:00 dan 12:00gacha",
-    },
+    },  
     {
       image: "https://sirepid.uz/images/rahbarlar/3.png",
       name: "Abduqodirov Xavast Abdukarimovich",
@@ -50,6 +51,10 @@ function Rahbarlar() {
     <>
       <Navbar />
       <div className="body_page">
+        <Container >
+
+        <h5 className="title_body_page">Rahbariyat</h5>
+
         {arr.map((e, i) => (
           <div className="rahbar_box">
             <div className="rahbar_img_box">
@@ -64,7 +69,7 @@ function Rahbarlar() {
               <div className="rahbar_detail_contact">
               <div className="rahbar_detail_contact_item">
                   <p> Telefon </p>
-                  <p>{e.phone}</p>
+                  <p>{e.telefon}</p>
                 </div>
                 <div className="rahbar_detail_contact_item">
                   <p> Email </p>
@@ -82,6 +87,7 @@ function Rahbarlar() {
             </div>
           </div>
         ))}
+        </Container>
       </div>
       <Footer />
     </>

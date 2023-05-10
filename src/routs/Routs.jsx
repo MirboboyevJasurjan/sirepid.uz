@@ -1,16 +1,25 @@
 import React from "react";
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
 import About from "../pages/about/About";
-import Hujjatlar from "../pages/hujjatlar/Hujjatlar";
-import Labs from '../pages/labs/Labs';
-import Vaksinatsiya from "../pages/vaksinatsiya/Vaksinatsiya"
 import Rahbarlar from "../pages/about/innerAbout/Rahbarlar"
 import Hodimlar from "../pages/about/innerAbout/Hodimlar"
 import Tuzulma from "../pages/about/innerAbout/Tuzulma"
-import Yangiliklar from "../pages/about/innerAbout/Yangiliklar"
+
+import Hujjatlar from "../pages/hujjatlar/Hujjatlar";
+// Tashkilot hujjatlari
+
+import Matbuot from "../pages/matbuot/Matbuot";
+import Yangiliklar from "../pages/matbuot/innerMatbuot/Yangiliklar"
+import Fotolavhalar from "../pages/matbuot/innerMatbuot/Fotolavhalar"
+import Videolavhalar from "../pages/matbuot/innerMatbuot/Videolavhalar"
+
+// Loyihalar
+// Interaktiv hizmatlar
+
+import Labs from '../pages/labs/Labs';
+import Vaksinatsiya from "../pages/vaksinatsiya/Vaksinatsiya"
+
 
 
 const Routs = createBrowserRouter([
@@ -36,7 +45,7 @@ const Routs = createBrowserRouter([
   },
   {
     path: "/matbuot",
-    element: <>Matbuot</>,
+    element: <Matbuot />,
   },
   {
     path: "/interaktiv-xizmatlar",
@@ -66,13 +75,20 @@ const Routs = createBrowserRouter([
     path: "/yangiliklar",
     element: <Yangiliklar />,
   },
+  {
+    path: "/fotolavhalar",
+    element: <Fotolavhalar />,
+  },
+  {
+    path: "/videolavhalar",
+    element: <Videolavhalar />,
+  },
+  {
+    path: "/matbuot-bog-lanish",
+    element: <>Matbuot hizmati bilan bog'lanish</>,
+  },
   
 ]);
 
 
 export default Routs
-
-// <li><a href="#">Matbuot xizmati</a></li>
-// <li><a href="#">Muassasalar</a></li>
-// <li><a href="#">Loyihalar</a></li>
-// <li><a href="#">Interaktiv xizmatlar</a></li>

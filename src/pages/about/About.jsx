@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Navbar from "../../layout/navbar/Navbar";
 import Footer from "../../layout/footer/Footer";
+import { Container } from "react-bootstrap";
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
       <Navbar />
 
       <div className="about_umumiy body_page">
+        <Container >
         <ul>
           <li><a href="/rahbarlar">Rahbariyat </a></li>
           <li><a href="/hodimlar">Hodimlar </a></li>
@@ -44,8 +46,8 @@ function About() {
           Respublikasi Davlat gerbi tasviri tushirilgan va o‘z nomi davlat
           tilida yozilgan muhrga egalik qilish huquqiga ega.
         </p>
+      </Container>
       </div>
-
       <Footer />
     </>
   );

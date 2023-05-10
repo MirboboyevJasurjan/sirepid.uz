@@ -46,7 +46,7 @@ function Navbar() {
               
               <li><a href="/interaktiv-xizmatlar">Interaktiv xizmatlar</a></li>
               
-              <li><a href="/vaksinatsiya">Vakansiyalar</a></li>
+              <li><a href="/vaksinatsiya">Vakansinatsiya</a></li>
               
               <li><a href="/labs">CoVId-19 Lab</a></li>
 
@@ -83,7 +83,7 @@ function Navbar() {
                 
                 <li><a onClick={onMenu} href="#">Interaktiv xizmatlar</a></li>
                 
-                <li><a onClick={onMenu} href="#">Vakansiyalar</a></li>
+                <li><a onClick={onMenu} href="#">Vakansinatsiya</a></li>
                 
                 <li><a onClick={onMenu} href="#">CoVId-19 Lab</a></li>
               </ul>

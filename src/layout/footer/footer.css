@@ -12,6 +12,7 @@ ul {
   justify-content: center;
   background: #151414;
   position: relative;
+  margin-top: 150px !important;
   /* width: 100%; */
 }
 .footer-cta {
