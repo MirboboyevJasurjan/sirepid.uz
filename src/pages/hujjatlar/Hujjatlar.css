@@ -1,0 +1,9 @@
+.hujjatlar_page .labs_box .card_lab {
+    flex-direction: column-reverse;
+}
+.hujjatlar_page .labs_box .card_lab_description img{
+
+    width: 250px;
+    object-fit: cover;
+
+}

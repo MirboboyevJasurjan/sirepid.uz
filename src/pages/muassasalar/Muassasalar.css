@@ -1,0 +1,57 @@
+.muassasalar_boxes{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.muassasalar_boxes:after{
+    content: '';
+    height: 100%;
+    width: 5px;
+    color: red;
+}
+.muassasa_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    /* background-color: #234; */
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(100,100,111, 0.2);
+    -webkit-border-radius: 5px 30px 0px 0px;
+    border-radius: 5px 30px 0px 0px;
+    transition: all 0.3s ease;
+}
+.muassasa_box:hover{
+    transform: scale(1.01);
+    background-color: #f5f5f5;
+}
+.muassasa_box:nth-child(even){
+    flex-direction: row-reverse;
+}
+.muassasa_description{
+    display: flex;
+    flex-direction: column;
+}
+.muassasa_title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.muassasa_rahbar{
+    font-size: 18px;
+}
+.muassasa_rahbar span{
+    font-weight: 600;
+}
+.muassasa_img {
+    height: 150px;
+    width: 300px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.muassasa_description a {
+    color: #222;
+}

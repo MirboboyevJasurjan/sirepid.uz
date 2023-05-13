@@ -58,7 +58,7 @@ function Rahbarlar() {
         {arr.map((e, i) => (
           <div className="rahbar_box">
             <div className="rahbar_img_box">
-              <img src={e.image} alt="Rahbar surati" srcset="" />
+              <img src={e.image} alt="Rahbar surati" />
             </div>
             <div className="rahbar_contact_box">
               <div className="rahbar_upper_contact">

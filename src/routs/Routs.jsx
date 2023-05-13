@@ -14,6 +14,8 @@ import Yangiliklar from "../pages/matbuot/innerMatbuot/Yangiliklar"
 import Fotolavhalar from "../pages/matbuot/innerMatbuot/Fotolavhalar"
 import Videolavhalar from "../pages/matbuot/innerMatbuot/Videolavhalar"
 
+import Muassasalar from "../pages/muassasalar/muassasalar";
+
 // Loyihalar
 // Interaktiv hizmatlar
 
@@ -57,7 +59,7 @@ const Routs = createBrowserRouter([
   },
   {
     path: "/muassasalar",
-    element: <>Muassasalar</>,
+    element: <Muassasalar />,
   },
   {
     path: "/rahbarlar",
@@ -84,8 +86,8 @@ const Routs = createBrowserRouter([
     element: <Videolavhalar />,
   },
   {
-    path: "/matbuot-bog-lanish",
-    element: <>Matbuot hizmati bilan bog'lanish</>,
+    path: "/hududiy-rahbarlar",
+    element: <>Hududiy bo'lim rahbarlari</>,
   },
   
 ]);

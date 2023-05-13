@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    /* width: 80%; */
     height: max-content;
 }
 
@@ -40,6 +40,98 @@
     background: linear-gradient(48deg, #5294fd 30%, #F5F5F5 70%);
     /* background: linear-gradient(227deg, #4abdac 1%, #ffffff 100%); */   
 }
+
+.news_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;    
+    transition: all 0.3s ease;
+    margin: 150px auto;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+
+}
+
+.news_box .rahbar_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    background: linear-gradient(48deg,#F5F5F5 30%,  #5294fd 100%);
+    transition: all 2s ease;
+    position: relative;
+}
+
+.news_box .rahbar_box:hover{
+    transition: all .5s ease;
+    background: linear-gradient(48deg, #5294fd 30%, #F5F5F5 100%);
+}
+.news_box .rahbar_box .rahbar_img_box, .news_box .rahbar_box .rahbar_img_box img{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: all 2s ease;
+
+
+}
+.news_box .rahbar_upper_contact{
+    height: 100px;
+}
+.news_box .rahbar_contact_box{
+    margin-top: -50px;
+    width: 100%;
+    transition: all 2s ease;
+
+}
+.news_box .rahbar_upper_contact h5 {
+    font-size: 14px;
+    width: 100%;
+}
+.news_box .rahbar_box .rahbar_detail_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    padding: 5px;
+    height: 500px;
+    transition: all 2s ease;
+}
+.news_box .rahbar_red_hr {
+    height: 0;
+    margin: 5px auto !important;
+}
+.news_box .rahbar_box .rahbar_detail_contact p, .news_box .rahbar_box .rahbar_detail_contact a  {
+    /* text-decoration: none; */
+    color: #222;
+    font-size: 13px;
+}
+
+.news_box .rahbar_detail_contact_item{
+    width: 100%;
+}
+
+.news_box .time_news{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top: 1px solid tan;
+    max-width: 100px;
+}
+.time_news_p {
+    font-size: 10px !important  ;
+    text-align: end;
+
+}
+
+
 .rahbar_img_box ,.rahbar_img_box img{
     width: 450px;
     height: 300px;
@@ -137,5 +229,28 @@
     .rahbar_detail_contact_item p:first-child {
       font-size: 16px;
     }
+
+    .news_box .rahbar_box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 200px;
+        height: -333px;
+        background: linear-gradient(48deg,#F5F5F5 30%, #5294fd 100%);
+        transition: all 2s ease;
+        position: relative;
   }
+
+  .news_box .rahbar_box .rahbar_detail_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    padding: 5px;
+    height: 200px;
+    transition: all 2s ease;
+}
+}
   

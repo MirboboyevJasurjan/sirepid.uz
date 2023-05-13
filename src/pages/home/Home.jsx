@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Iframe from 'react-iframe'
 import './Home.css'
+import { Container } from "react-bootstrap";
 
 
 const CarouselDisplay = ({ images }) => {
@@ -75,22 +76,69 @@ function Home() {
       });
   }, []);
 
+  const arr = [
+    {
+      image: "https://sirepid.uz/images/rahbarlar/1.png",
+      name: "Hasanov Jo`rabek Hamroboyevich",
+      lavozim:
+        "Hasanov Jo`rabek Hamroboyevich Sanitariya epidemiologik osoyishtalik va jamoat salomatligi xizmati Sirdaryo viloyati boshqarmasi boshlig`i.",
+      telefon: "+998 67 226 49 26",
+      email: "jurabek.khasanov@ssv.uz",
+      time: '12 Aug, 22:22, 2023'
+    },
+    {
+      image: "https://sirepid.uz/images/rahbarlar/2.png",
+      name: "Sultanov Jamshid Artiqbayevich",
+      lavozim:
+        "Sultanov Jamshid Artiqbayevich Sanitariya epidemiologik osoyishtalik va jamoat salomatligi xizmati Sirdaryo viloyati boshqarmasi boshlig`i o`ribosari.",
+      telefon: "+998 67 226 49 26",
+      email: "jamshid.khasanov@ssv.uz",
+      time: '12 Aug, 22:22, 2023'
+    },
+    {
+      image: "https://sirepid.uz/images/rahbarlar/3.png",
+      name: "Abduqodirov Xavast Abdukarimovich",
+      lavozim:
+        "Abduqodirov Xavast Abdukarimovich Sanitariya epidemiologik osoyishtalik va jamoat salomatligi xizmati Sirdaryo viloyati boshqarmasi boshlig`i o`ribosari.",
+      telefon: "+998 67 226 49 26",
+      email: "xavast.khasanov@ssv.uz",
+      time: '12 Aug, 22:22, 2023'
+    }
+  ];
+
   return (
     <>
       {/* Navbar */}
       <Navbar />
       {/* News */}
+      <Container>
       <div className="HomeNews body_page">
         <h2>Latest News</h2>
-        <ul>
-          {news.map((item, index) => (
-            <li key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.body}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+
+        <div className="news_box">
+        {arr.map((e, i) => (
+          <div className="rahbar_box">
+            <div className="rahbar_img_box">
+              <img src={e.image} alt="Rahbar surati" />
+            </div>
+            <div className="rahbar_contact_box">
+              <div className="rahbar_upper_contact">
+                <h5>{e.name}</h5>
+              </div>
+              <hr className="rahbar_red_hr" />
+              <div className="rahbar_detail_contact">
+                <div className="rahbar_detail_contact_item">
+                  <a href="#">{e.lavozim}</a>
+                </div>
+                <div className="rahbar_detail_contact_item time_news">
+                  <p className="time_news_p">{e.time}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        </div>
+      
       {/* Carousel */}
       <div>
       <h2>Carousel Display (Correct Order)</h2>
@@ -100,18 +148,21 @@ function Home() {
       <CarouselDisplay images={reversedImages} />
     </div>
       {/* Google map */}
+      </div>
+      </Container>
+    <div className="map_container">      
       <Iframe
         url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.910305873838!2d68.75903491220008!3d40.521473559626024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b207a873ffffff%3A0x9f34ae5e610ace43!2sOblastnaya%20Bol&#39;nitsa.!5e0!3m2!1suz!2s!4v1683382395259!5m2!1suz!2s"
-        width="800"
-        height="600"
-        allowFullScreen=""
+        // width="800"
+        // height="600"
+        id="iframeMap"
+        allowFullScreen="true"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-    
+    </div>
 
       {/* Links */}
-
       {/* Footer */}
       <Footer />
     </>
